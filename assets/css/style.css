@@ -490,6 +490,7 @@ main {
 .about-text p {
     margin-bottom: 15px;
     margin-right: 8px;
+    text-align: justify;
 }
 
 
@@ -545,6 +546,10 @@ main {
     line-height: 1.6;
     padding-bottom: 25px;
     padding-right: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: justify;
 }
 
 .service-list {
@@ -1050,25 +1055,31 @@ main {
   #CONTACT
 \*-----------------------------------*/
 
-.mapbox {
-    position: relative;
-    height: 250px;
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    border: 1px solid var(--jet);
-    overflow: hidden;
+.social-item{
+    display: flex;
 }
 
-.mapbox figure {
-    height: 100%;
+.social-item a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
 }
 
-.mapbox iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    filter: grayscale(1) invert(1);
+.social-item h1{
+    font-size: 20px;
+}
+
+.contact-list{
+    gap: 5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-logo{
+    height: 50px;
+    width: 50px;
 }
 
 .contact-form {
